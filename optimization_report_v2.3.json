@@ -1,0 +1,321 @@
+{
+  "optimization_info": {
+    "timestamp": "2025-09-01 18:03:49",
+    "project": "Classificació de Residus - ResNet18 + Optuna",
+    "model_architecture": "ResNet18 (Transfer Learning)",
+    "frozen_layers": [
+      "conv1",
+      "bn1",
+      "layer1",
+      "layer2"
+    ],
+    "trainable_layers": [
+      "layer3",
+      "layer4",
+      "fc"
+    ],
+    "dataset_info": {
+      "classes": [
+        "plastics",
+        "metalls",
+        "paper",
+        "vidre",
+        "organic",
+        "textil"
+      ],
+      "total_classes": 6,
+      "data_split": "60/20/20 (train/val/test)",
+      "extra_augmentation": [
+        "vidre",
+        "textil"
+      ]
+    },
+    "n_trials": 20,
+    "best_trial_number": 0,
+    "optimization_direction": "minimize_validation_loss"
+  },
+  "best_hyperparameters": {
+    "learning_rate": 4.765165349547268e-05,
+    "batch_size": 16,
+    "num_epochs": 12,
+    "dropout": 0.3
+  },
+  "best_validation_loss": 0.3581412802227436,
+  "test_metrics": {
+    "test_loss": 0.3152816305531466,
+    "test_accuracy": 0.9013333333333333
+  },
+  "detailed_classification_report": {
+    "plastics": {
+      "precision": 0.9299719887955182,
+      "recall": 0.9054545454545454,
+      "f1-score": 0.9175495163519115,
+      "support": 1100.0
+    },
+    "metalls": {
+      "precision": 0.8348017621145375,
+      "recall": 0.9475,
+      "f1-score": 0.8875878220140515,
+      "support": 400.0
+    },
+    "paper": {
+      "precision": 0.8810289389067524,
+      "recall": 0.9133333333333333,
+      "f1-score": 0.8968903436988543,
+      "support": 600.0
+    },
+    "vidre": {
+      "precision": 0.9014598540145985,
+      "recall": 0.8233333333333334,
+      "f1-score": 0.8606271777003485,
+      "support": 300.0
+    },
+    "organic": {
+      "precision": 0.949468085106383,
+      "recall": 0.8925,
+      "f1-score": 0.9201030927835051,
+      "support": 400.0
+    },
+    "textil": {
+      "precision": 0.8719211822660099,
+      "recall": 0.885,
+      "f1-score": 0.8784119106699751,
+      "support": 200.0
+    },
+    "accuracy": 0.9013333333333333,
+    "macro avg": {
+      "precision": 0.8947753018673,
+      "recall": 0.894520202020202,
+      "f1-score": 0.893528310536441,
+      "support": 3000.0
+    },
+    "weighted avg": {
+      "precision": 0.9033722275216904,
+      "recall": 0.9013333333333333,
+      "f1-score": 0.9014618585231791,
+      "support": 3000.0
+    }
+  },
+  "trial_history": [
+    {
+      "trial": 0,
+      "params": {
+        "learning_rate": 4.765165349547268e-05,
+        "batch_size": 16,
+        "num_epochs": 12,
+        "dropout": 0.3
+      },
+      "value": 0.3581412802227436,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 1,
+      "params": {
+        "learning_rate": 1.3821746565361776e-05,
+        "batch_size": 16,
+        "num_epochs": 11,
+        "dropout": 0.6
+      },
+      "value": 0.41858736919784084,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 2,
+      "params": {
+        "learning_rate": 3.724584864173798e-05,
+        "batch_size": 32,
+        "num_epochs": 12,
+        "dropout": 0.6
+      },
+      "value": 0.38984864373552675,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 3,
+      "params": {
+        "learning_rate": 3.070347966529341e-05,
+        "batch_size": 24,
+        "num_epochs": 10,
+        "dropout": 0.45
+      },
+      "value": 0.5738403547853231,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 4,
+      "params": {
+        "learning_rate": 1.0716977594340659e-05,
+        "batch_size": 16,
+        "num_epochs": 12,
+        "dropout": 0.6
+      },
+      "value": 0.7442500486355671,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 5,
+      "params": {
+        "learning_rate": 0.0002981847645434374,
+        "batch_size": 16,
+        "num_epochs": 6,
+        "dropout": 0.3
+      },
+      "value": 0.5813749643003053,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 6,
+      "params": {
+        "learning_rate": 0.00014296151242679895,
+        "batch_size": 32,
+        "num_epochs": 8,
+        "dropout": 0.3
+      },
+      "value": 0.5181693419259279,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 7,
+      "params": {
+        "learning_rate": 0.0006275317863600547,
+        "batch_size": 24,
+        "num_epochs": 9,
+        "dropout": 0.4
+      },
+      "value": 0.7203441289663315,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 8,
+      "params": {
+        "learning_rate": 6.950556659727776e-05,
+        "batch_size": 16,
+        "num_epochs": 5,
+        "dropout": 0.45
+      },
+      "value": 0.5237143735916532,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 9,
+      "params": {
+        "learning_rate": 0.0001495941586377666,
+        "batch_size": 16,
+        "num_epochs": 8,
+        "dropout": 0.35
+      },
+      "value": 0.5621285795189559,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 10,
+      "params": {
+        "learning_rate": 0.0009966283911752249,
+        "batch_size": 24,
+        "num_epochs": 10,
+        "dropout": 0.5
+      },
+      "value": 0.9282863933444023,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 11,
+      "params": {
+        "learning_rate": 4.416238141628594e-05,
+        "batch_size": 32,
+        "num_epochs": 12,
+        "dropout": 0.55
+      },
+      "value": 0.48038284088227345,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 12,
+      "params": {
+        "learning_rate": 3.7154806229541736e-05,
+        "batch_size": 32,
+        "num_epochs": 12,
+        "dropout": 0.5
+      },
+      "value": 0.46404598367975114,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 13,
+      "params": {
+        "learning_rate": 2.7278015569032583e-05,
+        "batch_size": 32,
+        "num_epochs": 11,
+        "dropout": 0.4
+      },
+      "value": 0.49389884945877055,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 14,
+      "params": {
+        "learning_rate": 8.573019738546585e-05,
+        "batch_size": 32,
+        "num_epochs": 10,
+        "dropout": 0.35
+      },
+      "value": 0.3786750911794444,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 15,
+      "params": {
+        "learning_rate": 7.950894782760194e-05,
+        "batch_size": 16,
+        "num_epochs": 10,
+        "dropout": 0.35
+      },
+      "value": 0.45828329517377264,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 16,
+      "params": {
+        "learning_rate": 0.00024915221156816033,
+        "batch_size": 32,
+        "num_epochs": 7,
+        "dropout": 0.35
+      },
+      "value": 0.572539718306445,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 17,
+      "params": {
+        "learning_rate": 6.138873401435173e-05,
+        "batch_size": 32,
+        "num_epochs": 9,
+        "dropout": 0.3
+      },
+      "value": 0.517491607892109,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 18,
+      "params": {
+        "learning_rate": 1.919593556072586e-05,
+        "batch_size": 16,
+        "num_epochs": 11,
+        "dropout": 0.4
+      },
+      "value": 0.5386059557662365,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 19,
+      "params": {
+        "learning_rate": 0.00012986709221501103,
+        "batch_size": 24,
+        "num_epochs": 11,
+        "dropout": 0.35
+      },
+      "value": 0.49359053175896406,
+      "state": "TrialState.PRUNED"
+    }
+  ]
+}
