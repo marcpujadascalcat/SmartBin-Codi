@@ -1,0 +1,312 @@
+{
+  "optimization_info": {
+    "timestamp": "2025-09-01 14:40:43",
+    "project": "Paperera Intel·ligent - Classificació de Residus",
+    "dataset_info": {
+      "classes": [
+        "envasos",
+        "paper",
+        "rebuig",
+        "vidre"
+      ],
+      "total_classes": 4,
+      "data_split": "60/20/20 (train/val/test)"
+    },
+    "n_trials": 20,
+    "best_trial_number": 15,
+    "optimization_direction": "minimize_validation_loss"
+  },
+  "best_hyperparameters": {
+    "learning_rate": 0.0003454842518803514,
+    "batch_size": 24,
+    "num_epochs": 8,
+    "dropout": 0.3,
+    "weight_factor": 0.8
+  },
+  "best_validation_loss": 0.8809148006439209,
+  "test_metrics": {
+    "test_loss": 0.8554740205724188,
+    "test_accuracy": 0.6423333333333333
+  },
+  "classification_report": {
+    "envasos": {
+      "precision": 0.7506899724011039,
+      "recall": 0.6276923076923077,
+      "f1-score": 0.6837033933808128,
+      "support": 1300.0
+    },
+    "paper": {
+      "precision": 0.6132879045996593,
+      "recall": 0.72,
+      "f1-score": 0.6623735050597976,
+      "support": 500.0
+    },
+    "rebuig": {
+      "precision": 0.6179039301310044,
+      "recall": 0.6288888888888889,
+      "f1-score": 0.6233480176211453,
+      "support": 900.0
+    },
+    "vidre": {
+      "precision": 0.45121951219512196,
+      "recall": 0.6166666666666667,
+      "f1-score": 0.5211267605633803,
+      "support": 300.0
+    },
+    "accuracy": 0.6423333333333333,
+    "macro avg": {
+      "precision": 0.6082753298317224,
+      "recall": 0.6483119658119658,
+      "f1-score": 0.6226379191562841,
+      "support": 3000.0
+    },
+    "weighted avg": {
+      "precision": 0.6580067690659017,
+      "recall": 0.6423333333333333,
+      "f1-score": 0.6457841359843334,
+      "support": 3000.0
+    }
+  },
+  "trial_history": [
+    {
+      "trial": 0,
+      "params": {
+        "learning_rate": 0.001602351229389994,
+        "batch_size": 48,
+        "num_epochs": 5,
+        "dropout": 0.7,
+        "weight_factor": 0.7
+      },
+      "value": 1.3866584130695887,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 1,
+      "params": {
+        "learning_rate": 0.0005510798882853513,
+        "batch_size": 16,
+        "num_epochs": 9,
+        "dropout": 0.4,
+        "weight_factor": 1.7000000000000002
+      },
+      "value": 1.011800361282014,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 2,
+      "params": {
+        "learning_rate": 0.00013087668316424247,
+        "batch_size": 48,
+        "num_epochs": 4,
+        "dropout": 0.3,
+        "weight_factor": 1.0
+      },
+      "value": 1.0860327756594097,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 3,
+      "params": {
+        "learning_rate": 0.00010791959412081901,
+        "batch_size": 32,
+        "num_epochs": 10,
+        "dropout": 0.6000000000000001,
+        "weight_factor": 1.5
+      },
+      "value": 1.0869008775087112,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 4,
+      "params": {
+        "learning_rate": 0.0008084966763245127,
+        "batch_size": 16,
+        "num_epochs": 10,
+        "dropout": 0.4,
+        "weight_factor": 0.6
+      },
+      "value": 1.3338790938575218,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 5,
+      "params": {
+        "learning_rate": 0.0004609403731726842,
+        "batch_size": 24,
+        "num_epochs": 8,
+        "dropout": 0.5,
+        "weight_factor": 2.0
+      },
+      "value": 1.037884508371353,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 6,
+      "params": {
+        "learning_rate": 0.00027946436514684163,
+        "batch_size": 16,
+        "num_epochs": 7,
+        "dropout": 0.3,
+        "weight_factor": 1.7000000000000002
+      },
+      "value": 0.9938167148131005,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 7,
+      "params": {
+        "learning_rate": 0.00023725365531016801,
+        "batch_size": 16,
+        "num_epochs": 6,
+        "dropout": 0.3,
+        "weight_factor": 1.3
+      },
+      "value": 0.9271392457662745,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 8,
+      "params": {
+        "learning_rate": 0.0002170411109471287,
+        "batch_size": 32,
+        "num_epochs": 6,
+        "dropout": 0.5,
+        "weight_factor": 1.1
+      },
+      "value": 1.079234887310799,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 9,
+      "params": {
+        "learning_rate": 0.00023571430945231906,
+        "batch_size": 24,
+        "num_epochs": 6,
+        "dropout": 0.3,
+        "weight_factor": 1.2000000000000002
+      },
+      "value": 0.9726516058444977,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 10,
+      "params": {
+        "learning_rate": 0.0011555562680060818,
+        "batch_size": 16,
+        "num_epochs": 4,
+        "dropout": 0.4,
+        "weight_factor": 0.9
+      },
+      "value": 1.2686971727203815,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 11,
+      "params": {
+        "learning_rate": 0.0002455653635068677,
+        "batch_size": 24,
+        "num_epochs": 6,
+        "dropout": 0.3,
+        "weight_factor": 1.3
+      },
+      "value": 1.1491489102840424,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 12,
+      "params": {
+        "learning_rate": 0.00018404360437965353,
+        "batch_size": 24,
+        "num_epochs": 6,
+        "dropout": 0.3,
+        "weight_factor": 1.3
+      },
+      "value": 0.9999280292987823,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 13,
+      "params": {
+        "learning_rate": 0.0003440542705896142,
+        "batch_size": 24,
+        "num_epochs": 7,
+        "dropout": 0.4,
+        "weight_factor": 1.5
+      },
+      "value": 1.1366834979057312,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 14,
+      "params": {
+        "learning_rate": 0.0001534931151295121,
+        "batch_size": 16,
+        "num_epochs": 5,
+        "dropout": 0.6000000000000001,
+        "weight_factor": 1.2000000000000002
+      },
+      "value": 1.1138622075953382,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 15,
+      "params": {
+        "learning_rate": 0.0003454842518803514,
+        "batch_size": 24,
+        "num_epochs": 8,
+        "dropout": 0.3,
+        "weight_factor": 0.8
+      },
+      "value": 0.8809148006439209,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 16,
+      "params": {
+        "learning_rate": 0.0006347499984937358,
+        "batch_size": 48,
+        "num_epochs": 8,
+        "dropout": 0.4,
+        "weight_factor": 0.8
+      },
+      "value": 1.2779179187048049,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 17,
+      "params": {
+        "learning_rate": 0.00036117313241027454,
+        "batch_size": 32,
+        "num_epochs": 8,
+        "dropout": 0.5,
+        "weight_factor": 0.5
+      },
+      "value": 0.8920124109755171,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 18,
+      "params": {
+        "learning_rate": 0.0003896160751770364,
+        "batch_size": 32,
+        "num_epochs": 8,
+        "dropout": 0.6000000000000001,
+        "weight_factor": 0.5
+      },
+      "value": 1.1230366756307317,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 19,
+      "params": {
+        "learning_rate": 0.0008581327211110056,
+        "batch_size": 32,
+        "num_epochs": 9,
+        "dropout": 0.7,
+        "weight_factor": 0.5
+      },
+      "value": 1.3435903432521414,
+      "state": "TrialState.PRUNED"
+    }
+  ]
+}
