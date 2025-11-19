@@ -1,0 +1,381 @@
+{
+  "optimization_info": {
+    "timestamp": "2025-08-23 18:13:25",
+    "n_trials": 15,
+    "best_trial_number": 8,
+    "optimization_direction": "minimize_validation_loss"
+  },
+  "best_hyperparameters": {
+    "learning_rate": 0.0002482301862794532,
+    "batch_size": 16,
+    "num_epochs": 8,
+    "dropout": 0.5
+  },
+  "best_validation_loss": 0.7244033061743199,
+  "test_metrics": {
+    "test_loss": 0.761790529170886,
+    "test_accuracy": 0.8243333333333334
+  },
+  "classification_report": {
+    "aerosol_cans": {
+      "precision": 0.8901098901098901,
+      "recall": 0.81,
+      "f1-score": 0.8481675392670157,
+      "support": 100.0
+    },
+    "aluminum_food_cans": {
+      "precision": 0.6990291262135923,
+      "recall": 0.72,
+      "f1-score": 0.7093596059113301,
+      "support": 100.0
+    },
+    "aluminum_soda_cans": {
+      "precision": 0.8645833333333334,
+      "recall": 0.83,
+      "f1-score": 0.8469387755102041,
+      "support": 100.0
+    },
+    "cardboard_boxes": {
+      "precision": 0.7019230769230769,
+      "recall": 0.73,
+      "f1-score": 0.7156862745098039,
+      "support": 100.0
+    },
+    "cardboard_packaging": {
+      "precision": 0.73,
+      "recall": 0.73,
+      "f1-score": 0.73,
+      "support": 100.0
+    },
+    "clothing": {
+      "precision": 0.7684210526315789,
+      "recall": 0.73,
+      "f1-score": 0.7487179487179487,
+      "support": 100.0
+    },
+    "coffee_grounds": {
+      "precision": 0.8571428571428571,
+      "recall": 0.9,
+      "f1-score": 0.8780487804878049,
+      "support": 100.0
+    },
+    "disposable_plastic_cutlery": {
+      "precision": 0.8055555555555556,
+      "recall": 0.87,
+      "f1-score": 0.8365384615384616,
+      "support": 100.0
+    },
+    "eggshells": {
+      "precision": 0.7522123893805309,
+      "recall": 0.85,
+      "f1-score": 0.7981220657276995,
+      "support": 100.0
+    },
+    "food_waste": {
+      "precision": 0.7583333333333333,
+      "recall": 0.91,
+      "f1-score": 0.8272727272727273,
+      "support": 100.0
+    },
+    "glass_beverage_bottles": {
+      "precision": 0.9148936170212766,
+      "recall": 0.86,
+      "f1-score": 0.8865979381443299,
+      "support": 100.0
+    },
+    "glass_cosmetic_containers": {
+      "precision": 0.8913043478260869,
+      "recall": 0.82,
+      "f1-score": 0.8541666666666666,
+      "support": 100.0
+    },
+    "glass_food_jars": {
+      "precision": 0.9431818181818182,
+      "recall": 0.83,
+      "f1-score": 0.8829787234042553,
+      "support": 100.0
+    },
+    "magazines": {
+      "precision": 0.9108910891089109,
+      "recall": 0.92,
+      "f1-score": 0.9154228855721394,
+      "support": 100.0
+    },
+    "newspaper": {
+      "precision": 0.86,
+      "recall": 0.86,
+      "f1-score": 0.86,
+      "support": 100.0
+    },
+    "office_paper": {
+      "precision": 0.8918918918918919,
+      "recall": 0.66,
+      "f1-score": 0.7586206896551724,
+      "support": 100.0
+    },
+    "paper_cups": {
+      "precision": 0.7525773195876289,
+      "recall": 0.73,
+      "f1-score": 0.7411167512690355,
+      "support": 100.0
+    },
+    "plastic_cup_lids": {
+      "precision": 0.8125,
+      "recall": 0.78,
+      "f1-score": 0.7959183673469388,
+      "support": 100.0
+    },
+    "plastic_detergent_bottles": {
+      "precision": 0.8461538461538461,
+      "recall": 0.88,
+      "f1-score": 0.8627450980392157,
+      "support": 100.0
+    },
+    "plastic_food_containers": {
+      "precision": 0.85,
+      "recall": 0.85,
+      "f1-score": 0.85,
+      "support": 100.0
+    },
+    "plastic_shopping_bags": {
+      "precision": 0.8979591836734694,
+      "recall": 0.88,
+      "f1-score": 0.8888888888888888,
+      "support": 100.0
+    },
+    "plastic_soda_bottles": {
+      "precision": 0.9010989010989011,
+      "recall": 0.82,
+      "f1-score": 0.8586387434554974,
+      "support": 100.0
+    },
+    "plastic_straws": {
+      "precision": 0.900990099009901,
+      "recall": 0.91,
+      "f1-score": 0.9054726368159204,
+      "support": 100.0
+    },
+    "plastic_trash_bags": {
+      "precision": 0.9479166666666666,
+      "recall": 0.91,
+      "f1-score": 0.9285714285714286,
+      "support": 100.0
+    },
+    "plastic_water_bottles": {
+      "precision": 0.7652173913043478,
+      "recall": 0.88,
+      "f1-score": 0.8186046511627907,
+      "support": 100.0
+    },
+    "shoes": {
+      "precision": 0.9078947368421053,
+      "recall": 0.69,
+      "f1-score": 0.7840909090909091,
+      "support": 100.0
+    },
+    "steel_food_cans": {
+      "precision": 0.6446280991735537,
+      "recall": 0.78,
+      "f1-score": 0.7058823529411765,
+      "support": 100.0
+    },
+    "styrofoam_cups": {
+      "precision": 0.8725490196078431,
+      "recall": 0.89,
+      "f1-score": 0.8811881188118812,
+      "support": 100.0
+    },
+    "styrofoam_food_containers": {
+      "precision": 0.7457627118644068,
+      "recall": 0.88,
+      "f1-score": 0.8073394495412844,
+      "support": 100.0
+    },
+    "tea_bags": {
+      "precision": 0.8118811881188119,
+      "recall": 0.82,
+      "f1-score": 0.8159203980099502,
+      "support": 100.0
+    },
+    "accuracy": 0.8243333333333334,
+    "macro avg": {
+      "precision": 0.8298867513918405,
+      "recall": 0.8243333333333334,
+      "f1-score": 0.8247005625443492,
+      "support": 3000.0
+    },
+    "weighted avg": {
+      "precision": 0.8298867513918406,
+      "recall": 0.8243333333333334,
+      "f1-score": 0.8247005625443492,
+      "support": 3000.0
+    }
+  },
+  "trial_history": [
+    {
+      "trial": 0,
+      "params": {
+        "learning_rate": 0.00016184352923539398,
+        "batch_size": 16,
+        "num_epochs": 5,
+        "dropout": 0.7
+      },
+      "value": 0.9807264020349434,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 1,
+      "params": {
+        "learning_rate": 0.0004111164009367583,
+        "batch_size": 32,
+        "num_epochs": 3,
+        "dropout": 0.6000000000000001
+      },
+      "value": 0.9952572820351478,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 2,
+      "params": {
+        "learning_rate": 0.0008733109432600577,
+        "batch_size": 64,
+        "num_epochs": 4,
+        "dropout": 0.5
+      },
+      "value": 1.3102737411539604,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 3,
+      "params": {
+        "learning_rate": 0.00016488553416786557,
+        "batch_size": 48,
+        "num_epochs": 7,
+        "dropout": 0.7
+      },
+      "value": 2.4268355577711076,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 4,
+      "params": {
+        "learning_rate": 0.00027513661756959414,
+        "batch_size": 32,
+        "num_epochs": 3,
+        "dropout": 0.3
+      },
+      "value": 1.0006311938483665,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 5,
+      "params": {
+        "learning_rate": 0.00010651202769768743,
+        "batch_size": 16,
+        "num_epochs": 6,
+        "dropout": 0.7
+      },
+      "value": 2.1943748200193363,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 6,
+      "params": {
+        "learning_rate": 0.00023117485061294573,
+        "batch_size": 16,
+        "num_epochs": 8,
+        "dropout": 0.5
+      },
+      "value": 0.7613552343313944,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 7,
+      "params": {
+        "learning_rate": 0.00043074484352368736,
+        "batch_size": 24,
+        "num_epochs": 8,
+        "dropout": 0.4
+      },
+      "value": 0.8334337673634291,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 8,
+      "params": {
+        "learning_rate": 0.0002482301862794532,
+        "batch_size": 16,
+        "num_epochs": 8,
+        "dropout": 0.5
+      },
+      "value": 0.7244033061743199,
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 9,
+      "params": {
+        "learning_rate": 0.0008462919542297757,
+        "batch_size": 64,
+        "num_epochs": 6,
+        "dropout": 0.3
+      },
+      "value": 1.2944401242631547,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 10,
+      "params": {
+        "learning_rate": 0.0005424670002243495,
+        "batch_size": 24,
+        "num_epochs": 7,
+        "dropout": 0.5
+      },
+      "value": 0.826692414522171,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 11,
+      "params": {
+        "learning_rate": 0.0002110744273648932,
+        "batch_size": 16,
+        "num_epochs": 8,
+        "dropout": 0.5
+      },
+      "value": 1.091670162381327,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 12,
+      "params": {
+        "learning_rate": 0.00027084526307076897,
+        "batch_size": 16,
+        "num_epochs": 8,
+        "dropout": 0.4
+      },
+      "value": 0.7967464591740591,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 13,
+      "params": {
+        "learning_rate": 0.00019141841050803173,
+        "batch_size": 16,
+        "num_epochs": 7,
+        "dropout": 0.6000000000000001
+      },
+      "value": 1.0244996379664604,
+      "state": "TrialState.PRUNED"
+    },
+    {
+      "trial": 14,
+      "params": {
+        "learning_rate": 0.0001224592960041756,
+        "batch_size": 48,
+        "num_epochs": 8,
+        "dropout": 0.4
+      },
+      "value": 1.8929932666203333,
+      "state": "TrialState.PRUNED"
+    }
+  ]
+}
